@@ -6,15 +6,16 @@
 @font-face {
 	font-family: 'kanit';
 	src: url(‘/fonts/Kanit-Regular.ttf’);
+    font-family: "HDJ";
+    src: url(/fonts/DEADJIM.otf);
 }
 
 body{
-    background-color: #0A0A0A;
+    background-color: #080808;
     
 }
 .Area-1{
     margin: auto;
-
     border-bottom: solid rgb(217, 217, 217) 2px;
     background-image: url("/image/walpaper.jpg");
     background-size: 100%;
@@ -33,18 +34,43 @@ body{
     display: flex;
     flex-direction: row;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-decoration: none;
     list-style-type:none;
 }
 .P-nav-int a{
     color: rgb(218, 218, 218);
     text-decoration: none;
-    font-family: "kanit";
-    font-size: xx-large;
+    font-family: "HDJ";
+    font-weight: 50;
+    font-size: 35px;
+    letter-spacing: 15px; 
+}
+
+#navstyle {
+    background:
+    linear-gradient(
+        to right,
+        rgba(100, 200, 200, 0),
+        rgba(100, 200, 200, 0)
+    ),
+    linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgb(255, 213, 0),
+        rgb(56, 225, 255)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 50%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+#navstyle:hover {
+    background-size: 0 3px, 100% 3px;
 }
 .coverbox{
-    height: 800px;
+    height: 750px;
     width: auto;
     text-align: center;
 }
@@ -62,20 +88,70 @@ body{
     justify-content: center;
     color: whitesmoke;
 }
+.twohight p{
+    font-family: "kanit";
+    font-size:20px;
+}
 h1{
     font-size: 60px;
+    font-family: "HDJ";
+    font-weight: 50;
+    letter-spacing: 20px;   
 }
 .twomid{
     height: 60%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-
+}
+.casleft{
+    width: 20%;
+    z-index: 2;
+}
+.CV{
+    width: 70%;
+    border-bottom: solid 2px white;
+    border-top: solid 2px white;
+    z-index: 1;
+    display: flex;
+}
+.left-cv{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    border-right: solid 2px white;
+}
+.bio{
+    height: 40%;
+    width: 100%;
+    border-bottom: solid 2px white;
+}
+.skills{
+    height: 60%;
+    width: 100%;
+}
+.right-cv{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+}
+.xp-pro{
+    height: 90%;
+    width: 100%;
+}
+.link-cv{
+    height: 10%;
+    width: 100%;
+}
+.casright{
+    width: 10%;
+    z-index: 2;
 }
 .Cassetteleft{
     height: 100%;
     width: auto;
-
 }
 .cassetteright{
     height: 100%;
@@ -93,6 +169,8 @@ h1{
     width: 70%;
     color: whitesmoke;
     font-size: 25px;
+    font-family: "kanit";
+    word-spacing: 3px;
 }
 .Area-3{
     margin: auto;
@@ -101,8 +179,16 @@ h1{
     display: flex;
     flex-direction: row;
 }
+.styleA{
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+    font-family: "HDJ";
+    font-weight: 10;
+    font-size: 35px;
+    letter-spacing: 15px;
+}
 .threeright{
-    width: 60%;
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -110,10 +196,11 @@ h1{
 
 }
 .previsu{
+    padding: 60px;
     border-bottom: solid rgb(217, 217, 217) 2px;
     border-top: solid rgb(217, 217, 217) 2px;
     height: 60%;
-    width: 80%;
+    width: 95%;
     color:  white;
     display: flex;
     flex-direction: column;
@@ -126,25 +213,35 @@ h1{
     width: 90%;
 }
 .threeleft{
-    width: 40%;
+    width: 50%;
     height: 100%;
+    background-image: url(../image/vyniles\ raimbow.png);
+    background-position: 140% 50%; 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-#bouton{
-    border: solid 3px white;
-    background-color: transparent;
-    color: white;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    margin-left: 70%;
-    
+.topV{
+    height: 33%;
+    width: 100%;
+    margin-left: 10%;
+}
+.midV{
+    height: 33%;
+    width: 100%;
+    margin-left: 50%;
+}
+.botV{
+    height: 33%;
+    width: 100%;
+    margin-left: 10%;
 }
 .desccodename{
     width: 80%;
     padding: 20px;
     font-size: 20px;
     align-items: center;
+    font-family: "kanit";
+    word-spacing: 3px;
 }
 .vinyles{
     height: 100%;
@@ -152,19 +249,191 @@ h1{
 .Area-4{
     margin: auto;
     height: 150vh;
-    border-bottom: solid rgb(217, 217, 217) 2px;
 }
 .Titlefour{
-    height: 30%;
+    height: 20%;
     width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+h2{
+    color: white;
+    font-size: 60px;
+    font-family: "HDJ";
+    font-weight: 50;
+    letter-spacing: 20px; 
+
 }
 .gridtimeline{
     background-image: url(../image/linerainbowV2.png);
+    background-position-x: center;
+    background-position-y: 190px;
     background-repeat: no-repeat;
-    border: solid white 2px;
-    height: 70%;
+    height: 60%;
     width: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+#timecode{
+    border-left: solid 2px white;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    filter: opacity(60%);
+}
+.twitter{
+    height: 70px;
+    width: auto;
+}
+.github{
+    height: 70px;
+    width: auto;
+}
+.linkedin{
+    height: 70px;
+    width: auto;
+}
+.C-button, .C-button::after {
+    width: 380px;
+    height: 86px;
+    font-size: 36px;
+    font-family: 'HDJ';
+    background: linear-gradient(45deg, transparent 5%, #080808 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 88px;
+    box-shadow: 6px 0px 0px #d4a90b;
+    outline: transparent;
+    position: relative;
+}
 
+.C-button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'VOIR';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #d4a90b 3%, #d4a90b 5%, #d3d3d3 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #d4a90b;
+    clip-path: var(--slice-0);
+}
+
+.C-button:hover::after {
+    animation: 1.5s glitch;
+    animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+    0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+    }
+    10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+    }
+    20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+    }
+    30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+    }
+    40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+    }
+    50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+    }
+    60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+    }
+    70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+    }
+    80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+    }
+    90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+    }
+    100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+    }
+}
+
+.three {
+    font-family: 'kanit';
+    color: #d3d3d3;
+    padding: 20px;
+    display: flex;
+    font-size: 20px;
+}
+.six {
+    font-family: 'kanit';
+    color: #d3d3d3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 20px;
+}
+.eight {
+    font-family: 'kanit';
+    color: #d3d3d3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 20px;
+}
+#Card {
+    height: 330px;
+    width: auto;
+    filter: drop-shadow(-17px 18px 7.75px rgb(0, 0, 0));   
+}
+#Card:hover{
+    animation-name: select;
+    animation-duration: 1s;
+    filter: drop-shadow(0px 18px 15px rgb(0, 0, 0)); height: 360px;
+}
+@keyframes select {
+    0% {filter: drop-shadow(-17px 18px 7.75px rgb(0, 0, 0));  height: 330px;}
+    40% {filter: drop-shadow(0px 18px 15px rgb(0, 0, 0)); }
+    100% {filter: drop-shadow(0px 18px 15px rgb(0, 0, 0)); height: 360px;}
+}
+#SM:hover{
+    animation-name: SM;
+    animation-duration: 1s;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+}
+@keyframes SM {
+    from {filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0));}
+    to {filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));}
+}
+.copyright{
+    color: #d3d3d3;
+    font-family: 'kanit';
 }

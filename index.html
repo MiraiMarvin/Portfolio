@@ -11,9 +11,9 @@
     <div class="Area-1">
             <nav class="P-navigation">
                 <ul class="P-nav-int">
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">Coding</a></li>
-                    <li><a href="">ArtWork</a></li>
+                    <li><a id="navstyle" href="accueil.html">Accueil</a></li>
+                    <li><a id="navstyle" href="coding.html">Coding</a></li>
+                    <li><a id="navstyle" href="artwork.html">ArtWork</a></li>
                 </ul>
             </nav>
     <img class="coverbox" src="../image/cover.png" alt="Cover">
@@ -24,11 +24,23 @@
             <p>Developper & Digital Creator</p>
         </div>
         <div class="twomid">
-            <div>
-                <img class="Cassetteleft" src="../image/Cassetteleft.png" alt="leftcas"/>
+            <div class="casleft">
+                <img class="Cassetteleft" src="../image/Cassetteleft.png" alt="cassetteleft"></img>       
             </div>
-            <div>
-                <img class="cassetteright" src="../image/cassetteright.png" alt="rightcas"/>
+            <div class="CV">
+                <div class="left-cv">
+                    <div class="bio"></div>
+                    <div class="skills"></div>
+                </div>
+                <div class="right-cv">
+                    <div class="xp-pro"></div>
+                    <div class="link-cv">
+                        <a href="" class="CV-PDF">Voir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="casright">
+                <img class="cassetteright" src="../image/Cassetteright.png" alt="Cassetteright"></img>
             </div>
         </div>
         <div class="twobottom">
@@ -43,7 +55,15 @@
     </div>
     <div class="Area-3">
         <div class="threeleft">  
-            <img class="vinyles"src="../image/demivinyles.png" alt="vinyles">
+            <div class="topV">
+                <img id="Card" src="../image/SD CARD.png" alt="SD CARD" class="top-C">
+            </div>
+            <div class="midV">
+                <img id="Card" src="../image/SD CARD empty.png" alt="SD CARD" class="top-M">
+            </div>
+            <div class="botV">
+                <img id="Card" src="../image/SD CARD empty.png" alt="SD CARD" class="top-B">
+            </div>
         </div>
         <div class="threeright">
             <div class="previsu">
@@ -53,7 +73,7 @@
                     standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and 
                     typesetting industry. Lorem Ipsum has been the industry's 
                     standard dummy text ever since the 1500s,</div>
-                <button id="bouton">Voir</button>
+                <a href="detail.html" class="styleA" id="navstyle">Voir</a>
             </div>
 
         </div>
@@ -62,22 +82,34 @@
 
     <section class="Area-4">
         <div class="Titlefour">
-            <p>HELLO monde</p>
-
+            <h2>The Timeline</h2>
         </div>
         <div class="gridtimeline">
             <div class="one"></div>
             <div class="two"></div>
-            <div class="three"></div>
+            <div id="timecode" class="three">Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry. Lorem Ipsum has been the industry's 
+                standard dummy text ever since the 1500s</div>
             <div class="four"></div>
             <div class="five"></div>
-            <div class="six"></div>
+            <div id="timecode" class="six">Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry. Lorem Ipsum has been the industry's 
+                standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry. Lorem Ipsum has been the industry's 
+                standard dummy text ever since the 1500s,</div>
             <div class="seven"></div>
-            <div class="eight"></div>
+            <div id="timecode"class="eight">Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry. Lorem Ipsum has been the industry's 
+                standard dummy text ever since the 1500s</div>
         </div>
-
-
     </section>
-
+    <section>
+        <div class="footer">
+        <a href="https://www.linkedin.com/in/marvinclerc21/"><img class="linkedin" src="../image/linkedin-logo.png" alt="linkedin-logo" id="SM"></a>
+        <a href="https://twitter.com/Bingko_555"><img class="twitter" src="../image/twitter.png" alt="twitter icons" id="SM"></a>
+        <a href="https://github.com/MiraiMarvin"><img class="github" src="../image/3291695.png" alt="github icons" id="SM"></a>
+        </div>
+        <p class="copyright">©All rights reserved (Tous droits réservés)</p>
+    </section>
 </body>
 </html>
