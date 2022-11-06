@@ -121,6 +121,7 @@ h1{
     height: 100%;
     width: 60%;
     border-right: solid 2px white;
+    text-align: center;
 }
 .bio{
     height: 40%;
@@ -130,6 +131,9 @@ h1{
 .skills{
     height: 60%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .right-cv{
     display: flex;
@@ -140,10 +144,51 @@ h1{
 .xp-pro{
     height: 90%;
     width: 100%;
+    text-align: center;
+}
+h4{
+    font-family: 'HDJ';
+    color: white;
+    font-size: 2em;
+    font-weight: 10;
+}
+.link-cv{
+    text-align: center;
+}
+#bloc{
+    border-bottom: solid 2px white;
+    padding: 10%;
+}
+.skills-ic{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#skills-icons{
+    height: 60px;
+    width: auto;
+}
+h3{
+    font-family: 'kanit';
+    font-size: larger;
+    color: white;
+    align-items: center;
+}
+.experiences{
+    font-family: 'kanit';
+    color: white;
+
 }
 .link-cv{
     height: 10%;
     width: 100%;
+}
+.bio{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 .casright{
     width: 10%;
@@ -268,7 +313,7 @@ h2{
 .gridtimeline{
     background-image: url(../image/linerainbowV2.png);
     background-position-x: center;
-    background-position-y: 190px;
+    background-position-y: center;
     background-repeat: no-repeat;
     height: 60%;
     width: auto;
@@ -277,6 +322,9 @@ h2{
 }
 #timecode{
     border-left: solid 2px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .footer{
     display: flex;
@@ -437,3 +485,254 @@ h2{
     color: #d3d3d3;
     font-family: 'kanit';
 }
+@media screen and (max-width: 1024px){
+    .Cassetteleft{
+        display: none;
+    }
+    .cassetteright{
+        display: none;
+    }
+    .threeleft{
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .topV{
+        margin-left: 0%;
+    }
+    .midV{
+        margin-left: 0%;
+    }
+    .botV{
+        margin-left: 0%;
+    }
+    .gridtimeline{
+        background-position-y: 248px;
+    }
+}
+    @media screen and (max-width: 768px){
+        .P-nav-int a {
+            color: rgb(218, 218, 218);
+            text-decoration: none;
+            font-family: "HDJ";
+            font-weight: 50;
+            font-size: 30px;
+            letter-spacing: 15px;
+        }
+        .coverbox {
+            height: 600px;
+            width: auto;
+            text-align: center;
+        }
+        .skills-ic {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .desccodename {
+            width: 80%;
+            padding: 20px;
+            font-size: 15px;
+            align-items: center;
+            font-family: "kanit";
+            word-spacing: 0px;
+        }
+        .previsu {
+            padding: 0px;
+            border-bottom: solid rgb(217, 217, 217) 2px;
+            border-top: solid rgb(217, 217, 217) 2px;
+            height: 60%;
+            width: 95%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+}
+
+    @media screen and (max-width: 425px){
+        .Area-1 {
+            margin: auto;
+            border-bottom: solid rgb(217, 217, 217) 2px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 63vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        .coverbox {
+            height: 400px;
+            width: auto;
+            text-align: center;
+        }
+        .P-nav-int {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-around;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .eight {
+            font-family: 'kanit';
+            color: #d3d3d3;
+            padding: 0px;
+            display: flex;
+            flex-direction: column-reverse;
+            font-size: 15px;
+        }
+        .six {
+            font-family: 'kanit';
+            color: #d3d3d3;
+            padding: 0px;
+            display: flex;
+            flex-direction: column-reverse;
+            font-size: 15px;
+        }
+        .three {
+            font-family: 'kanit';
+            color: #d3d3d3;
+            padding: 0px;
+            display: flex;
+            font-size: 15px;
+        }
+        .gridtimeline {
+            background-image: url(../image/linerainbowV2.png);
+            background-position-x: center;
+            background-position-y: 245px;
+            background-repeat: no-repeat;
+            height: 60%;
+            width: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-content: space-between;
+        }
+        .Titlefour {
+            text-align: center;
+            height: 20%;
+            width: auto;
+            display: flex;
+            align-items: center;
+        }
+        .Area-3 {
+            margin: auto;
+            border-bottom: solid rgb(217, 217, 217) 2px;
+            height: 180vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .threeleft {
+            background-image: none;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .threeright {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .desc {
+            width: 80%;
+            color: white;
+            font-size: 15px;
+            font-family: "kanit";
+        }
+        .CV {
+            width: 100%;
+            border-bottom: solid 2px white;
+            border-top: solid 2px white;
+            z-index: 1;
+            display: flex;
+        }
+        .twohight {
+            height: 15%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: whitesmoke;
+            text-align: center;
+        }
+        .previsu {
+            padding: 0px;
+            border-bottom: none;
+            border-top: solid rgb(217, 217, 217) 2px;
+            height: 100%;
+            width: 95%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .desccodename {
+            width: 80%;
+            padding: 0px;
+            font-size: 15px;
+            align-items: center;
+            font-family: "kanit";
+            word-spacing: 0px;
+        }
+        
+    }
+    @media screen and (max-width: 375px){
+        .coverbox {
+            height: 321px;
+            width: auto;
+            text-align: center;
+        }
+        .Area-1 {
+            margin: auto;
+            border-bottom: solid rgb(217, 217, 217) 2px;
+            background-image: none;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 54vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        .github {
+            height: 50px;
+            width: auto;
+        }
+        .twitter {
+            height: 50px;
+            width: auto;
+        }
+        .linkedin {
+            height: 50px;
+            width: auto;
+        }
+        h2 {
+            color: white;
+            font-size: 40px;
+            font-family: "HDJ";
+            font-weight: 50;
+            letter-spacing: 20px;
+        }
+        h4 {
+            font-family: 'HDJ';
+            color: white;
+            font-size: 1.5em;
+            font-weight: 10;
+        }
+        h1 {
+            font-size: 40px;
+            font-family: "HDJ";
+            font-weight: 50;
+            letter-spacing: 15px;
+        }
+    }
