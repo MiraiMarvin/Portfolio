@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'kanit';
+  src: url(‘/fonts/Kanit-Regular.ttf’);
+  font-family: "HDJ";
+  src: url(/fonts/DEADJIM.otf);
+}
+
+
+
+.Area-1 {
+  margin: auto;
+  background-size: 100%;
+  background-image: none;
+  background-repeat: no-repeat;
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.P-navigation {
+  width: 100%;
+}
+
+.P-nav-int {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.P-nav-int a {
+  color: rgb(218, 218, 218);
+  text-decoration: none;
+  font-family: "HDJ";
+  font-weight: 50;
+  font-size: 35px;
+  letter-spacing: 15px;
+}
+
+#navstyle {
+  background: linear-gradient(to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0)), linear-gradient(to right, rgb(255, 0, 0), rgb(255, 213, 0), rgb(56, 225, 255));
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 50%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+#navstyle:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+body {
+  background-color: #080808;
+}
+
+/*# sourceMappingURL=artwork.css.map */

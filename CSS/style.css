@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 @font-face {
 	font-family: 'kanit';
@@ -14,6 +15,58 @@ body{
     background-color: #080808;
     
 }
+
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+.loading_screen{
+
+
+
+    width: 100vw;
+    margin-left: 600px;
+
+
+
+    font-family: HDJ;
+    color: lightgrey;
+    font-size: 100px;
+
+
+    overflow: hidden;
+    animation: typing 2s steps(15, end), /* # of steps = # of chars */
+    blink-caret 1s step-end  alternate;
+}
+
+
+
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 150;
+    background-color: #080808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+h6{
+    font-family: HDJ;
+    color: lightgrey;
+    font-size: 100px;
+
+}
+h5{
+    font-family: HDJ;
+    font-size: 30px;
+    font-weight: lighter;
+}
 .Area-1{
     margin: auto;
     border-bottom: solid rgb(217, 217, 217) 2px;
@@ -25,9 +78,31 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    filter: blur(70);
 }
 .P-navigation{
     width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    padding: 20px;
+    background-color: transparent;
+    transition: background-color  1s ease-in-out;
+    border-bottom: solid rgba(217, 217, 217, 0) 1px;
+    transition: border-bottom-color 1s ease-in-out;
+    backdrop-filter: blur(0px);
+
+
+
+}
+.P-navigation.active{
+    background-color: rgba(8, 8, 8, 0.32);
+    transition: background-color 1s ease-in-out;
+    transition: border-bottom-color 1s ease-in-out;
+    border-bottom: solid rgb(217, 217, 217) 1px;
+    backdrop-filter: blur(20px);
+
+
 
 }
 .P-nav-int{
@@ -115,10 +190,11 @@ h1{
     z-index: 1;
     display: flex;
     opacity: 0;
-    transition: opacity 2s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 .CV.active{
     opacity: 1;
+    transition: opacity 2s ease-in-out;
 }
 
 .left-cv{
@@ -208,6 +284,7 @@ h3{
 }
 .Cassetteleft.active{
     transform: translateX(-10%);
+    transition: transform 0.6s ease-in-out;
 }
 .cassetteright{
     transform: translateX(-290%);
@@ -217,6 +294,7 @@ h3{
 }
 .cassetteright.active{
     transform: translateX(0%);
+    transition: transform 0.6s ease-in-out;
 }
 .twobottom{
     height: 25%;
@@ -347,9 +425,15 @@ h2{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    padding-top: 200px;
+    padding-top: 50px;
     padding-bottom: 100px;
     filter: opacity(60%);
+    width: 100%;
+}
+.footer_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .twitter{
     height: 70px;

@@ -4,7 +4,7 @@
     <!--SEO part-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="CSS/style.css"/>
     <link rel="canonical" href="https://portfolio-pi-ten-74.vercel.app/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="page de Marvin Clerc Web developpeur et illustrateur site responsive et coder en html css javascript avec des animations
@@ -32,12 +32,15 @@
     </script>
 </head>
 <body class="corps">
+<div id="loading-screen">
+    <p class="loading_screen">Initiative Loading. . .<p>
+</div>
     <div class="Area-1"><!--first part navbar and ui cover-->
-            <nav class="P-navigation">
+            <nav class="P-navigation" id="navbar">
                 <ul class="P-nav-int">
                     <li><a id="navstyle" href="accueil.html">Accueil</a></li>
-                    <li><a id="navstyle" href="coding.html">Coding</a></li>
-                    <li><a id="navstyle" href="artwork.html">ArtWork</a></li>
+                    <li><a id="navstyle" href="#Card">Coding</a></li>
+                    <li><a id="navstyle" href="Artwork.html">ArtWork</a></li>
                 </ul>
             </nav>
     <img class="coverbox" src="../image/cover.png" alt="Cover Portfolio">
@@ -54,6 +57,7 @@
                     <div class="bio">
                         <h4>Contact</h4>
                         <p class="experiences">marvin.clerc@edu.devinci.fr</p>
+                        <p class="experiences">+33 6 46 70 76 07</p>
                     </div>
                     <div class="skills">
                         <h4>Competences</h4>
@@ -64,6 +68,9 @@
                             <img id="skills-icons" src="../image/photoshop.png" alt="photoshop icons">
                             <img id="skills-icons" src="../image/php.png" alt="php icons">
                             <img id="skills-icons" src="../image/xd.png" alt="xd icons">
+                            <img id="skills-icons" src="../image/tailwind.png" alt="photoshop icons">
+                            <img id="skills-icons" src="../image/Vue.png" alt="php icons">
+                            <img id="skills-icons" src="../image/WP.png" alt="xd icons">
                         </div>
                     </div>
                 </div>
@@ -79,8 +86,9 @@
                             <p class="experiences">experience as a gymnastics coach in the club of my city.</p>
                         </div>
                         <div id="bloc">
-                            <h3>unknown experience</h3>
-                            <p class="experiences">.......</p>
+                            <h3>Ecologica , 2022</h3>
+                            <p class="experiences">
+                                School project aimed at producing a graphic charter, a marketing strategy and a website for a school that trains actors in the ecological transition.</p>
                         </div>
                         <div id="bloc">
                             <h3>unknown experience</h3>
@@ -149,7 +157,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="footer_main">
         <div class="footer"><!--social média -->
         <a href="https://www.linkedin.com/in/marvinclerc21/"><img class="linkedin" src="../image/linkedin-logo.png" alt="linkedin-logo" id="SM"></a>
         <a href="https://twitter.com/Bingko_555"><img class="twitter" src="../image/twitter.png" alt="twitter icons" id="SM"></a>
