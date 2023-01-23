@@ -7,13 +7,11 @@ querySelector('.CV')
 const navbar = document.
 querySelector('.P-navigation')
 
-window.onload = function() {
-     
+let showscreen = function() {
     var loadingScreen = document.getElementById("loading-screen");
     loadingScreen.style.display = "none";
-
-
 };
+setTimeout(showscreen, 5000);
 
 window.addEventListener('scroll', () => {
 
