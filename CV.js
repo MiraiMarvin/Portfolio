@@ -8,8 +8,8 @@ const navbar = document.
 querySelector('.P-navigation')
 
 let showscreen = function() {
-    var loadingScreen = document.getElementById("loading-screen");
-    loadingScreen.style.display = "none";
+    var loadingdown = document.querySelector('.loadingdown');
+    loadingdown.classList.add('down')
 };
 setTimeout(showscreen, 5000);
 

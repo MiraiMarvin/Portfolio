@@ -1,10 +1,17 @@
-.Area-1 {
+@font-face {
+  font-family: 'kanit';
+  src: url(‘/fonts/Kanit-Regular.ttf’);
+  font-family: "HDJ";
+  src: url(/fonts/DEADJIM.otf);
+}
+.Area-art{
+  height: 60vh;
+}
+.TOP {
   margin: auto;
-  border-bottom: solid rgb(217, 217, 217) 2px;
   background-size: 100%;
   background-image: none;
   background-repeat: no-repeat;
-  height: 53vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -12,6 +19,27 @@
 }
 .P-navigation{
   width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  padding: 20px;
+  background-color: transparent;
+  transition: background-color  1s ease-in-out;
+  border-bottom: solid rgba(217, 217, 217, 0) 1px;
+  transition: border-bottom-color 1s ease-in-out;
+  backdrop-filter: blur(0px);
+
+
+
+}
+.P-navigation.active{
+  background-color: rgba(8, 8, 8, 0.32);
+  transition: background-color 1s ease-in-out;
+  transition: border-bottom-color 1s ease-in-out;
+  border-bottom: solid rgb(217, 217, 217) 1px;
+  backdrop-filter: blur(20px);
+
+
 
 }
 .P-nav-int{
@@ -54,5 +82,50 @@
   background-size: 0 3px, 100% 3px;
 }
 body{
-  background-color: #080808;
+  background-color: #070707;
+}
+h1{
+  font-family: 'HDJ';
+  color: #e8e8e8;
+  font-weight: lighter;
+  letter-spacing: 10px;
+}
+button{
+  font-family: 'HDJ';
+  color: #e8e8e8;
+  font-weight: lighter;
+  letter-spacing: 10px;
+  border: none;
+  padding: 10px;
+  font-size:  2em;
+}
+
+.Area-2-art{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+
+
+}
+.togglebox_down{
+
+  display: block;
+  background-color: #101010;
+  width: 90%;
+  height: 5vh;
+  border-radius: 5px;
+  transition: height 1s ;
+
+
+}
+.togglebox_down.active{
+  display: block;
+  background-color: #101010;
+  width: 90%;
+  height: 70vh;
+  border-radius: 5px;
+  transition: height 1s;
+
 }
