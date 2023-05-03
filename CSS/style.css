@@ -1,0 +1,842 @@
+@import url("loading.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@font-face {
+	font-family: 'kanit';
+	src: url(/fonts/Kanit-Regular.ttf);
+    font-family: "HDJ";
+    src: url(/fonts/DEADJIM.otf);
+}
+
+body{
+    background-color: #080808;
+}
+
+
+
+h6{
+    font-family: HDJ;
+    color: lightgrey;
+    font-size: 100px;
+    font-weight: lighter;
+
+}
+h5{
+    font-family: HDJ;
+    font-size: 30px;
+    font-weight: lighter;
+}
+.Area-1{
+    margin: auto;
+    border-bottom: solid rgb(217, 217, 217) 2px;
+    background-image: url("/image/walpaper.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    filter: blur(70);
+}
+.P-navigation{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    padding: 20px;
+    background-color: transparent;
+    transition: background-color  1s ease-in-out;
+    border-bottom: solid rgba(217, 217, 217, 0) 1px;
+    transition: border-bottom-color 1s ease-in-out;
+    backdrop-filter: blur(0px);
+
+
+
+}
+.P-navigation.active{
+    background-color: rgba(8, 8, 8, 0.32);
+    transition: background-color 1s ease-in-out;
+    transition: border-bottom-color 1s ease-in-out;
+    border-bottom: solid rgb(217, 217, 217) 1px;
+    backdrop-filter: blur(20px);
+
+
+
+}
+.P-nav-int{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style-type:none;
+}
+.P-nav-int a{
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+    font-family: "HDJ";
+    font-weight: 50;
+    font-size: 35px;
+    letter-spacing: 15px; 
+}
+
+.navstyle {
+    background:
+    linear-gradient(
+        to right,
+        rgba(100, 200, 200, 0),
+        rgba(100, 200, 200, 0)
+    ),
+    linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgb(255, 213, 0),
+        rgb(56, 225, 255)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 50%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.navstyle:hover {
+    background-size: 0 3px, 100% 3px;
+}
+.coverbox{
+    height: 750px;
+    width: auto;
+    text-align: center;
+}
+.Area-2{
+    margin: auto;
+    border-bottom: solid rgb(217, 217, 217) 2px;
+    height: 150vh;
+
+}
+.twohight{
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+.twohight p{
+    font-family: "kanit";
+    font-size:20px;
+}
+h1{
+    font-size: 60px;
+    font-family: "HDJ";
+    font-weight: 50;
+    letter-spacing: 20px;   
+}
+.twomid{
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.casleft{
+    width: 20%;
+    z-index: 2;
+}
+.CV{
+    width: 70%;
+    border-bottom: solid 2px white;
+    border-top: solid 2px white;
+    z-index: 1;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.CV.active{
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.left-cv{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    border-right: solid 2px white;
+    text-align: center;
+}
+.bio{
+    height: 40%;
+    width: 100%;
+    border-bottom: solid 2px white;
+}
+.skills{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.right-cv{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+}
+.xp-pro{
+    height: 90%;
+    width: 100%;
+    text-align: center;
+}
+h4{
+    font-family: 'HDJ';
+    color: white;
+    font-size: 2em;
+
+    font-weight: lighter;
+}
+.link-cv{
+    text-align: center;
+}
+.bloc{
+    border-bottom: solid 2px white;
+    padding: 10%;
+}
+.skills-ic{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.skills-icons{
+    height: 60px;
+    width: auto;
+}
+h3{
+    font-family: 'kanit';
+    font-size: larger;
+    color: white;
+    align-items: center;
+}
+.experiences{
+    font-family: 'kanit';
+    color: white;
+
+}
+.link-cv{
+    height: 10%;
+    width: 100%;
+}
+.bio{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.casright{
+    width: 10%;
+    z-index: 2;
+}
+.Cassetteleft{
+    transform: translateX(100%);
+    transition: transform 0.6s ease-in-out;
+    height: 100%;
+    width: auto;
+}
+.Cassetteleft.active{
+    transform: translateX(-10%);
+    transition: transform 0.6s ease-in-out;
+}
+.cassetteright{
+    transform: translateX(-290%);
+    transition: transform 0.6s ease-in-out;
+    height: 100%;
+    width: auto;
+}
+.cassetteright.active{
+    transform: translateX(0%);
+    transition: transform 0.6s ease-in-out;
+}
+.twobottom{
+    height: 25%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.desc{
+    width: 70%;
+    color: whitesmoke;
+    font-size: 25px;
+    font-family: "kanit";
+    word-spacing: 3px;
+}
+.Area-3{
+    margin: auto;
+    border-bottom: solid rgb(217, 217, 217) 2px;
+    height: 150vh;
+    display: flex;
+    flex-direction: row;
+}
+.styleA{
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+    font-family: "HDJ";
+    font-weight: 10;
+    font-size: 35px;
+    letter-spacing: 15px;
+}
+.threeright{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.previsu{
+    padding: 60px;
+    border-bottom: solid rgb(217, 217, 217) 2px;
+    border-top: solid rgb(217, 217, 217) 2px;
+    height: 60%;
+    width: 95%;
+    color:  white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.monitor{
+    height: auto;
+    width: 90%;
+}
+.threeleft{
+    width: 50%;
+    height: 100%;
+    background-image: url(../image/vyniles\ raimbow.png);
+    background-position: 140% 50%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topV{
+    height: 33%;
+    width: 100%;
+    margin-left: 10%;
+}
+.midV{
+    height: 33%;
+    width: 100%;
+    margin-left: 50%;
+}
+.botV{
+    height: 33%;
+    width: 100%;
+    margin-left: 10%;
+}
+.desccodename{
+    width: 80%;
+    padding: 20px;
+    font-size: 20px;
+    align-items: center;
+    font-family: "kanit";
+    word-spacing: 3px;
+}
+.vinyles{
+    height: 100%;
+}
+.Area-4{
+    margin: auto;
+    height: 150vh;
+}
+.Titlefour{
+    height: 20%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+h2{
+    color: white;
+    font-size: 60px;
+    font-family: "HDJ";
+    font-weight: 50;
+    letter-spacing: 20px; 
+
+}
+.gridtimeline{
+    background-image: url(../image/linerainbowV3.png);
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    height: 60%;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#timecode{
+    border-left: solid 2px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    filter: opacity(60%);
+    width: 100%;
+}
+.footer_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.twitter{
+    height: 70px;
+    width: auto;
+}
+.github{
+    height: 70px;
+    width: auto;
+}
+.linkedin{
+    height: 70px;
+    width: auto;
+}
+.C-button, .C-button::after {
+    width: 380px;
+    height: 86px;
+    font-size: 36px;
+    font-family: 'HDJ';
+    background: linear-gradient(45deg, transparent 5%, #080808 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 88px;
+    box-shadow: 6px 0px 0px #d4a90b;
+    outline: transparent;
+    position: relative;
+}
+
+.C-button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'VOIR';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #d4a90b 3%, #d4a90b 5%, #d3d3d3 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #d4a90b;
+    clip-path: var(--slice-0);
+}
+
+.C-button:hover::after {
+    animation: 1.5s glitch;
+    animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+    0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+    }
+    10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+    }
+    20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+    }
+    30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+    }
+    40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+    }
+    50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+    }
+    60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+    }
+    70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+    }
+    80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+    }
+    90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+    }
+    100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+    }
+}
+
+.three {
+    font-family: 'kanit';
+    color: #d3d3d3;
+    padding: 20px;
+    display: flex;
+    font-size: 20px;
+}
+.six {
+    font-family: 'kanit';
+    color: #d3d3d3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 20px;
+}
+.eight {
+    font-family: 'kanit';
+    color: #d3d3d3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 20px;
+}
+.Card {
+    height: 330px;
+    width: auto;
+    filter: drop-shadow(-17px 18px 7.75px rgb(0, 0, 0));
+    transition: height   1s;
+
+}
+.Card:hover{
+    animation-name: select;
+    animation-duration: 1s;
+    filter: drop-shadow(0px 18px 15px rgb(0, 0, 0)); height: 360px;
+}
+@keyframes select {
+    0% {filter: drop-shadow(-17px 18px 7.75px rgb(0, 0, 0));  height: 330px;}
+    40% {filter: drop-shadow(0px 18px 15px rgb(0, 0, 0)); }
+    100% {filter: drop-shadow(0px 18px 15px rgb(0, 0, 0)); height: 360px;}
+}
+.SM:hover{
+    animation-name: SM;
+    animation-duration: 1s;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+}
+@keyframes SM {
+    from {filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0));}
+    to {filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));}
+}
+.copyright{
+    color: #d3d3d3;
+    font-family: 'kanit';
+}
+@media screen and (max-width: 1024px){
+    .Cassetteleft{
+        display: none;
+    }
+    .cassetteright{
+        display: none;
+    }
+    .threeleft{
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .topV{
+        margin-left: 0%;
+    }
+    .midV{
+        margin-left: 0%;
+    }
+    .botV{
+        margin-left: 0%;
+    }
+    .gridtimeline{
+        background-position-y: 248px;
+    }
+}
+    @media screen and (max-width: 768px){
+        .P-nav-int a {
+            color: rgb(218, 218, 218);
+            text-decoration: none;
+            font-family: "HDJ";
+            font-weight: 50;
+            font-size: 30px;
+            letter-spacing: 15px;
+        }
+        .coverbox {
+            height: 600px;
+            width: auto;
+            text-align: center;
+        }
+        .skills-ic {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .desccodename {
+            width: 80%;
+            padding: 20px;
+            font-size: 15px;
+            align-items: center;
+            font-family: "kanit";
+            word-spacing: 0px;
+        }
+        .previsu {
+            padding: 0px;
+            border-bottom: solid rgb(217, 217, 217) 2px;
+            border-top: solid rgb(217, 217, 217) 2px;
+            height: 60%;
+            width: 95%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+}
+
+    @media screen and (max-width: 425px){
+        .gridtimeline {
+            background-image: url(../image/linerainbowV3.png);
+            background-position-x: center;
+            background-position-y: 245px;
+            background-repeat: no-repeat;
+            height: 60%;
+            width: auto;
+            display: block;
+            grid-template-columns: repeat(4, 1fr);
+            align-content: space-between;
+        }
+        .coverbox {
+            height: 283px;
+            width: auto;
+            text-align: center;
+        }
+        h2 {
+            color: white;
+            font-size: 35px;
+            font-family: "HDJ";
+            font-weight: 50;
+            letter-spacing: 15px;
+        }
+        #Card {
+            height: 254px;
+            width: auto;
+            filter: drop-shadow(-17px 18px 7.75px rgb(0, 0, 0));
+        }
+        h4 {
+            font-family: 'HDJ';
+            color: white;
+            font-size: 1.5em;
+            font-weight: 10;
+        }
+        h1 {
+            font-size: 35px;
+            font-family: "HDJ";
+            font-weight: 50;
+            letter-spacing: 15px;
+        }
+        .Area-1 {
+            margin: auto;
+            border-bottom: solid rgb(217, 217, 217) 2px;
+            background-size: 100%;
+            background-image: none;
+            background-repeat: no-repeat;
+            height: 53vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        .P-nav-int {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-around;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .eight {
+            font-family: 'kanit';
+            color: #d3d3d3;
+            padding: 0px;
+            display: flex;
+            flex-direction: column-reverse;
+            font-size: 15px;
+        }
+        .six {
+            font-family: 'kanit';
+            color: #d3d3d3;
+            padding: 0px;
+            display: flex;
+            flex-direction: column-reverse;
+            font-size: 15px;
+        }
+        .three {
+            font-family: 'kanit';
+            color: #d3d3d3;
+            padding: 0px;
+            display: flex;
+            font-size: 15px;
+        }
+        .Titlefour {
+            text-align: center;
+            height: 20%;
+            width: auto;
+            display: flex;
+            align-items: center;
+        }
+        .Area-3 {
+            margin: auto;
+            border-bottom: solid rgb(217, 217, 217) 2px;
+            height: 180vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .threeleft {
+            background-image: none;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .threeright {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .desc {
+            width: 80%;
+            color: white;
+            font-size: 15px;
+            font-family: "kanit";
+        }
+        .CV {
+            width: 100%;
+            border-bottom: solid 2px white;
+            border-top: solid 2px white;
+            z-index: 1;
+            display: flex;
+        }
+        .twohight {
+            height: 15%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: whitesmoke;
+            text-align: center;
+        }
+        .previsu {
+            padding: 0px;
+            border-bottom: none;
+            border-top: solid rgb(217, 217, 217) 2px;
+            height: 100%;
+            width: 95%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .desccodename {
+            width: 80%;
+            padding: 0px;
+            font-size: 15px;
+            align-items: center;
+            font-family: "kanit";
+            word-spacing: 0px;
+        }
+        .timecode {
+            margin-bottom: 20px;
+            border-left: solid 2px white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 13px;
+        }
+        .Area-4 {
+            margin: auto;
+            height: 93vh;
+        }
+        
+    }
+    @media screen and (max-width: 375px){
+        .Area-1 {
+            margin: auto;
+            border-bottom: solid rgb(217, 217, 217) 2px;
+            background-image: none;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 54vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        .github {
+            height: 50px;
+            width: auto;
+        }
+        .twitter {
+            height: 50px;
+            width: auto;
+        }
+        .linkedin {
+            height: 50px;
+            width: auto;
+        }
+        h2 {
+            color: white;
+            font-size: 40px;
+            font-family: "HDJ";
+            font-weight: 50;
+            letter-spacing: 20px;
+        }
+        h4 {
+            font-family: 'HDJ';
+            color: white;
+            font-size: 1.5em;
+            font-weight: 10;
+        }
+        h1 {
+            font-size: 40px;
+            font-family: "HDJ";
+            font-weight: 50;
+            letter-spacing: 15px;
+        }
+    }

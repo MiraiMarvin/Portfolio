@@ -1,0 +1,11 @@
+Model Information:
+* title:	SD card adapter
+* source:	https://sketchfab.com/3d-models/sd-card-adapter-02f7f045679d402da9b9f280030821d4
+* author:	James_J (https://sketchfab.com/James_J)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "SD card adapter" (https://sketchfab.com/3d-models/sd-card-adapter-02f7f045679d402da9b9f280030821d4) by James_J (https://sketchfab.com/James_J) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
