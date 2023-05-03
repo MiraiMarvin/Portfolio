@@ -18,7 +18,7 @@ window.addEventListener('scroll', () => {
     const {scrollTop,clientHeight} =
     document.documentElement;
     
-    console.log(scrollTop, clientHeight);
+    //console.log(scrollTop, clientHeight);
 
     const topelementtotop = opencv.getBoundingClientRect().top;
     const topelementtobot = opencv.getBoundingClientRect().bottom;
@@ -47,7 +47,7 @@ window.addEventListener('scroll', () => {
 window.onscroll = function() {
     if (window.pageYOffset > 50) {
         navbar.classList.add("active");
-        console.log("quoi? feur")
+        //console.log("quoi? feur")
     }
     else {
         navbar.className = "P-navigation"

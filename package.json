@@ -2,5 +2,8 @@
   "dependencies": {
     "three": "^0.150.1",
     "three-gltf-loader": "^1.111.0"
+  },
+  "devDependencies": {
+    "vite": "^4.3.1"
   }
 }

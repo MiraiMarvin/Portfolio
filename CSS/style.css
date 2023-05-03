@@ -8,7 +8,7 @@
 }
 @font-face {
 	font-family: 'kanit';
-	src: url(‘/fonts/Kanit-Regular.ttf’);
+	src: url(/fonts/Kanit-Regular.ttf);
     font-family: "HDJ";
     src: url(/fonts/DEADJIM.otf);
 }
@@ -47,7 +47,7 @@ h5{
 .P-navigation{
     width: 100%;
     position: fixed;
-    top: 0px;
+    top: 0;
     z-index: 100;
     padding: 20px;
     background-color: transparent;
@@ -324,7 +324,7 @@ h3{
 .threeleft{
     width: 50%;
     height: 100%;
-    background-image: url(../image/vyniles\ raimbow.png);
+    background-image: url("../image/vyniles.png");
     background-position: 140% 50%; 
     background-repeat: no-repeat;
     background-size: cover;
